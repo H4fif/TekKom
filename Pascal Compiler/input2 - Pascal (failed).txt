@@ -1,0 +1,24 @@
+program token;
+var
+ch : char;
+f : file of text;
+begin
+	assign(f,"prima.pas");  //koneksikan file
+	reset(f);  //siapkan file
+	read(f,ch);
+	
+	while ch <> eof do
+	begin
+		if (ch = '<') then
+		begin
+			read(f,ch);
+			if (ch = '=') then
+				write('operator <=')
+			else if (ch = '>' then
+				write('operator <>')
+			else
+				write('operator <');
+		end;
+
+	end;
+end;

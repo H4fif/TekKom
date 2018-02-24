@@ -1,0 +1,14 @@
+PROGRAM Hitung;
+VAR
+f:integer; 
+w:integer;
+z:integer;
+BEGIN
+	f:=5 ;
+	w:=f+2 ;
+	IF w<3 THEN
+	BEGIN
+		IF F-W<=0 THEN
+			z:=4;
+	END;
+END.
